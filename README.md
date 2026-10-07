@@ -18,7 +18,7 @@
 
 
 
-* **数据库**：MySQL 9.7（cq\_economy 库，district\_economy 表，38 行 ×8 字段）
+* **数据库**：MySQL 8.0（cq\_economy 库，district\_economy 表，38 行 ×8 字段）
 
 * **客户端**：DBeaver（可视化 SQL 开发）
 
