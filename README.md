@@ -63,9 +63,7 @@
 
 * **窗口函数 UNSIGNED 溢出**：`RANK()`在 MySQL 返回 BIGINT UNSIGNED（无符号），人均排名 - GDP 排名为负数时直接溢出报错（ERROR 1690）。解决方案：`CAST(RANK() OVER(...) AS SIGNED)` 转成有符号整数再相减。
 
-* **中文路径导入失败**：MySQL `LOAD DATA LOCAL INFILE` 无法读取中文路径文件，需复制到英文路径（如 `E:/ETL/cq_data.csv`）再导入。
 
-* **图表量级问题**：GDP（千亿级）与人均 GDP（十万级）量级差 100 倍，不能放同一张图，需分开做柱状图。
 
 ## 可视化图表
 
